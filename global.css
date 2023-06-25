@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Kablammo&display=swap");
+:root {
+  --font-size-small: clamp(8px, 0.7vw, 18px);
+  --font-size-mid: clamp(14px, 1.2vw, 25px);
+  --font-size-large: clamp(18px, 1.75vw, 30px);
+  --font-size-Xlarge: clamp(20px, 3.5vw, 48px);
+  --primary-color: #ff8870;
+  --secondary-color: #ffcfa6;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100%;
+}
+
+body {
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  width: 100%;
+}
+
+/* GENERAL */
+.flex {
+  display: flex;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+/* GENERAL */
+
+/* NAVBAR */
+#navbar {
+  user-select: none;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: clamp(45px, 12svh, 90px);
+  z-index: 5;
+  overflow: hidden;
+}
+.spusten::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #273335;
+  box-shadow: 0 0 10px black;
+  animation: navHeight linear 0.25s forwards;
+  z-index: -1;
+}
+.dignut::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 50%;
+  background-color: #273335;
+  z-index: -1;
+  animation: navHeightt 0.25s linear forwards;
+}
+#navbar .logo {
+  width: clamp(27px, 6.5svh, 60px);
+  z-index: 5 !important;
+  margin-left: 2rem;
+  padding-top: 0.3rem;
+}
+#navbar .pc {
+  width: clamp(350px, 50%, 650px);
+  justify-content: space-around;
+  margin-right: clamp(20px, 3vh, 40px);
+}
+#navbar .pc li {
+  list-style: none;
+  margin: 0;
+}
+#navbar .pc li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: var(--font-size-mid);
+  position: relative;
+  text-align: center;
+  padding-inline: 1vw;
+}
+#navbar .pc li:nth-child(5) a {
+  box-shadow: 0 0 10px black;
+  filter: blur(10.4);
+}
+
+#navbar .pc li:nth-child(5) a {
+  box-shadow: 0 0 10px black;
+  filter: blur(10.4);
+}
+#navbar .pc li:nth-child(5) a:hover::before,
+#navbar .pc li:nth-child(5) a:hover::after {
+  display: none;
+}
+#navbar .pc li a:hover::before {
+  position: absolute;
+  top: 100%;
+  left: -2%;
+  content: "";
+  width: 104%;
+  height: 2px;
+  background-color: white;
+}
+#navbar .pc li a:hover::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+  animation: navigation 0.35s forwards;
+}
+
+/* NAVBAR MOBILE */
+#navbar .mobile {
+  display: none;
+}
+#navbar .navmobilebutton {
+  display: none;
+}
+/* NAVBAR MOBILE */
+/* NAVBAR */
+#pocetna {
+  width: 105%;
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+}
+#pocetna img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  object-position: center;
+  object-fit: cover;
+  filter: brightness(0.6);
+  box-shadow: 0 0 10px black;
+}
+#pocetna .natpis {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: var(--font-size-Xlarge);
+  min-width: 200px;
+  text-align: center;
+}
+#pocetna .natpis::after {
+  top: 125%;
+  left: 0;
+  content: "";
+  background-color: white;
+  height: 2px;
+  width: 45%;
+  position: absolute;
+}
+#pocetna .natpis::before {
+  top: 125%;
+  left: 55%;
+  content: "";
+  background-color: white;
+  height: 2px;
+  width: 45%;
+  position: absolute;
+}
+#pocetna .pound {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(75%);
+  color: var(--primary-color);
+  font-size: var(--font-size-Xlarge);
+  isolation: isolate;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-color: var(--primary-color);
+}
+#pocetna .pound::after {
+  position: absolute;
+  content: "";
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(40deg);
+  width: 5%;
+  aspect-ratio: 1/1;
+  background-color: #ff8870;
+}
+#pocetna #pocetnaButton {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  width: 10%;
+  min-width: 75px;
+  aspect-ratio: 5/2;
+  background-color: #ffcfa6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: var(--font-size-mid);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#pocetna #pocetnaButton::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+#pocetna #pocetnaButton:hover::after {
+  animation: PocetnaButton 0.25s forwards ease-out;
+}
+#pocetna #pocetnaButton p {
+  z-index: 2;
+}
+
+#pocetna #o-nama-poc {
+  min-height: 100svh;
+  padding-top: 100vh;
+  padding-top: 100svh;
+  width: 100%;
+}
+#pocetna #o-nama-poc h1 {
+  padding: 20vh 0;
+  font-size: var(--font-size-Xlarge);
+  margin-inline: auto;
+  width: fit-content;
+  position: relative;
+  text-align: center;
+  background-clip: text;
+  filter: drop-shadow(5px -2.5px 0px var(--primary-color));
+}
+#pocetna #o-nama-poc h1::after {
+  position: absolute;
+  top: 35%;
+  left: -10%;
+  height: 100%;
+  width: 100%;
+  content: "~";
+  transform: translate(-50%, 0);
+}
+#pocetna #o-nama-poc h1::before {
+  position: absolute;
+  top: 35%;
+  left: 110%;
+  height: 100%;
+  width: 100%;
+  content: "~";
+  transform: translate(-50%, 0);
+}
+#pocetna #o-nama-poc .ispod {
+  min-height: 50vh;
+  min-height: 50svh;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 2vh 0 5vh 0;
+  flex-wrap: wrap;
+}
+#pocetna #o-nama-poc .ispod .p {
+  width: 40%;
+  min-width: 325px;
+  height: 40%;
+  font-size: var(--font-size-mid);
+  margin-bottom: 10vh;
+}
+#pocetna #o-nama-poc .ispod .img {
+  width: 35vw;
+  margin-bottom: 10vh;
+  min-width: 325px;
+  height: 40vh;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+}
+#pocetna #o-nama-poc .ispod .img .thecard {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+}
+#pocetna #o-nama-poc .ispod .img:hover .thecard {
+  transform: rotateY(180deg);
+}
+#pocetna #o-nama-poc .ispod .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  filter: brightness(1.02);
+  box-shadow: 0 0 10px black;
+}
+#pocetna #o-nama-poc .ispod .img .backface {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 10px #273335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px black;
+}
+#pocetna #o-nama-poc .ispod .img .backface::after {
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("/pocetna.jpeg");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+#pocetna #o-nama-poc .ispod .img .backface .dugme {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  font-size: var(--font-size-mid);
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #273335;
+  padding: 1.75%;
+  text-align: center;
+  z-index: 3;
+}
+.link {
+  text-decoration: none;
+  color: #273335;
+}
+@keyframes navigation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 110%;
+  }
+}
+@keyframes PocetnaButton {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes navHeight {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes navHeightt {
+  100% {
+    height: 0;
+  }
+  0% {
+    height: 100%;
+  }
+}
+
+/* MEDIA */
+@media only screen and (max-width: 600px) {
+  :root {
+    --font-size-small: clamp(6px, 0.7vw, 18px);
+    --font-size-mid: clamp(12px, 1.2vw, 25px);
+    --font-size-large: clamp(16px, 1.75vw, 30px);
+    --font-size-Xlarge: clamp(18px, 3.5vw, 48px);
+  }
+  #pocetna img {
+    object-fit: center;
+  }
+  .pc {
+    display: none;
+  }
+}
+/* MEDIA */
+@media only screen and (max-width: 400px) {
+  :root {
+    --font-size-small: clamp(6px, 0.7vw, 18px);
+    --font-size-mid: clamp(11px, 1.2vw, 25px);
+    --font-size-large: clamp(14px, 1.75vw, 30px);
+    --font-size-Xlarge: clamp(16px, 3.5vw, 48px);
+  }
+  #pocetna #o-nama-poc .ispod .img,
+  #pocetna #o-nama-poc .ispod .p {
+    min-width: 275px;
+  }
+}
