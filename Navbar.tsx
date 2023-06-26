@@ -27,7 +27,7 @@ export default function Navbar() {
       return SetAnim("");
     }, 2500);
   }, []);
-  const [mobile, SetMobile] = useState("nece");
+  const [mobile, SetMobile] = useState("");
 
   return (
     <>
@@ -75,8 +75,8 @@ export default function Navbar() {
             src="/options.svg"
             alt="dasdsd"
             onClick={() => {
-              if (mobile === "nece") SetMobile("oce");
-              else SetMobile("nece");
+              if (mobile === "oce") SetMobile("nece");
+              else SetMobile("oce");
             }}
           />
         </div>
