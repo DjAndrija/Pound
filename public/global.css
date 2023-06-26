@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Kablammo&display=swap");
 @import url("./css/usluge.css");
+@import url("./css/navbar.css");
+
 :root {
   --font-size-small: clamp(8px, 0.7vw, 18px);
+  --font-size-nav: clamp(10px, 1vw, 20px);
   --font-size-mid: clamp(14px, 1.2vw, 25px);
   --font-size-large: clamp(18px, 1.75vw, 30px);
   --font-size-Xlarge: clamp(20px, 3.5vw, 48px);
@@ -37,126 +40,6 @@ body {
 }
 /* GENERAL */
 
-/* NAVBAR */
-#navbar {
-  user-select: none;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100% !important;
-  height: clamp(45px, 12svh, 90px);
-  z-index: 5;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-}
-.spusten::before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  background-color: #273335;
-  box-shadow: 0 0 10px black;
-  animation: navHeight linear 0.25s forwards;
-  z-index: -1;
-}
-.dignut::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  content: "";
-  height: 50%;
-  background-color: #273335;
-  z-index: -1;
-  animation: navHeightt 0.25s linear forwards;
-}
-#navbar .logo {
-  width: clamp(27px, 6.5svh, 60px);
-  z-index: 5 !important;
-  margin-left: 2rem;
-  padding-top: 0.3rem;
-}
-#navbar .pc {
-  width: clamp(150px, 40%, 650px);
-  justify-content: space-around;
-  margin-right: clamp(20px, 3vh, 40px);
-}
-#navbar .pc li {
-  list-style: none;
-  margin: 0;
-}
-#navbar .pc li a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: var(--font-size-mid);
-  position: relative;
-  text-align: center;
-  padding-inline: 1vw;
-}
-#navbar .pc li:nth-child(5) a {
-  box-shadow: 0 0 10px black;
-  filter: blur(10.4);
-}
-
-#navbar .pc li:nth-child(5) a {
-  box-shadow: 0 0 10px black;
-  filter: blur(10.4);
-}
-#navbar .pc li:nth-child(5) a:hover::before,
-#navbar .pc li:nth-child(5) a:hover::after {
-  display: none;
-}
-#navbar .pc li a:hover::before {
-  position: absolute;
-  top: 100%;
-  left: -2%;
-  content: "";
-  width: 104%;
-  height: 2px;
-  background-color: white;
-}
-#navbar .pc li a:hover::after {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  content: "";
-  width: 0%;
-  height: 2px;
-  background-color: var(--primary-color);
-  transform: translateX(-50%);
-  animation: navigation 0.35s forwards;
-}
-
-/* NAVBAR MOBILE */
-#navbar .mobile {
-  display: none;
-}
-#navbar .navmobilebutton {
-  width: clamp(27px, 6.5svh, 60px);
-  z-index: 5 !important;
-  margin-left: 2rem;
-  padding-top: 0.3rem;
-  position: relative;
-  height: clamp(27px, 6.5svh, 60px);
-  margin-right: clamp(20px, 3vh, 40px);
-  cursor: pointer;
-  display: none;
-}
-#navbar .navmobilebutton img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* NAVBAR MOBILE */
-/* NAVBAR */
 #pocetna {
   width: 100%;
   position: relative;
@@ -421,9 +304,10 @@ body {
 @media only screen and (max-width: 600px) {
   :root {
     --font-size-small: clamp(6px, 0.7vw, 18px);
+    --font-size-nav: clamp(8px, 1vw, 20px);
     --font-size-mid: clamp(12px, 1.2vw, 25px);
-    --font-size-large: clamp(16px, 1.75vw, 30px);
-    --font-size-Xlarge: clamp(18px, 3.5vw, 48px);
+    --font-size-large: clamp(14px, 1.75vw, 30px);
+    --font-size-Xlarge: clamp(16px, 3.5vw, 48px);
   }
   #pocetna img {
     object-fit: center;
@@ -431,6 +315,11 @@ body {
   .pc {
     display: none;
   }
+  .dignut::before,
+  .dignut::after {
+    display: none;
+  }
+
   .navmobilebutton {
     display: block;
     width: 100%;
@@ -446,8 +335,8 @@ body {
     --font-size-large: clamp(14px, 1.75vw, 30px);
     --font-size-Xlarge: clamp(16px, 3.5vw, 48px);
   }
-  #pocetna #o-nama-poc .ispod .img,
-  #pocetna #o-nama-poc .ispod .p {
+  #o-nama-poc .ispod .img,
+  #o-nama-poc .ispod .p {
     min-width: 275px;
   }
 }
