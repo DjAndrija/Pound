@@ -10,6 +10,7 @@ const cairo = Cairo({
 
 export default function Navbar() {
   const [stanjeNava, SetStanjeNava] = useState("");
+  const [anim, SetAnim] = useState("neanim");
   useEffect(() => {
     window.addEventListener("scroll", function o() {
       const { scrollY } = window;
@@ -21,12 +22,16 @@ export default function Navbar() {
       };
     });
   });
-
+  useEffect(() => {
+    setTimeout(() => {
+      return SetAnim("");
+    }, 500);
+  }, []);
   const [mobile, SetMobile] = useState("nece");
 
   return (
     <>
-      <ul className={`mobile ${mobile}`}>
+      <ul className={`mobile ${mobile} ${anim}`}>
         <li>
           <Link href="">Početna</Link>
         </li>
