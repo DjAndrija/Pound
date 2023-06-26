@@ -25,7 +25,7 @@ export default function Navbar() {
   useEffect(() => {
     setTimeout(() => {
       return SetAnim("");
-    }, 1000);
+    }, 2500);
   }, []);
   const [mobile, SetMobile] = useState("nece");
 
