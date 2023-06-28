@@ -28,7 +28,7 @@ export default function Usluge() {
       </div>
       <div className="ispod">
         <h2>
-          Proslava 18 Ro<span className={montserrat.className}>đ</span>endana{" "}
+          Proslava 18-og Ro<span className={montserrat.className}>đ</span>endana{" "}
           <span className="span">!</span>
         </h2>
         <div className="p">
@@ -39,8 +39,8 @@ export default function Usluge() {
             no<span className={montserrat.className}>ć</span> s prijateljima, uz
             mno<span className={montserrat.className}>š</span>tvo neverovatne
             zabave. U<span className={montserrat.className}>ž</span>ivajte u
-            neponovljivom iskustvu na va
-            <span className={montserrat.className}>š</span>em posebnom danu, dok
+            neponovljivom iskustvu za Va
+            <span className={montserrat.className}>š</span> poseban dan, dok
             mi brinemo o svim detaljima.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function Usluge() {
       </div>
       <div className="ispod">
         <h2>
-          Proslava godi<span className={montserrat.className}>š</span>ce
+          Proslava godi<span className={montserrat.className}>š</span>njice
           <span className="span">!</span>
         </h2>
         <div className="p">
@@ -69,13 +69,14 @@ export default function Usluge() {
             koji <span className={montserrat.className}>ć</span>e Vam pru
             <span className={montserrat.className}>ž</span>iti dovoljno mesta za
             ponovno okupljanje s dragim prijateljima. U
-            <span className={montserrat.className}>ž</span>ivajte u opuštenoj
+            <span className={montserrat.className}>ž</span>ivajte u opu
+            <span className={montserrat.className}>š</span>tenoj
             atmosferi, smehu i prise
             <span className={montserrat.className}>ć</span>anju na zajedni
             <span className={montserrat.className}>č</span>ke trenutke. Neka Va
             <span className={montserrat.className}>š</span>a godi
             <span className={montserrat.className}>š</span>njica bude
-            nezaboravno iskustvo koje{" "}
+            nezaboravno iskustvo koje
             <span className={montserrat.className}>ć</span>e Vam obnoviti veze i
             stvoriti nove uspomene.
           </p>
@@ -93,7 +94,28 @@ export default function Usluge() {
       </div>
       <div className="ispod">
         <h2>
-          Koktel parti-ji
+         Ro<span className={montserrat.className}>đ</span>enje deteta
+          <span className="span">!</span>
+        </h2>
+        <div className="p">
+          <p>
+          Dobrodo<span className={montserrat.className}>š</span>li u na<span className={montserrat.className}>š</span> klub koji vam nudi prostor za proslavu ro<span className={montserrat.className}>đ</span>enja va<span className={montserrat.className}>š</span>eg deteta! Pružamo vam mogućnost da zajedno s porodicom i prijateljima proslavite dolazak prinove. U<span className={montserrat.className}>ž</span>ivajte u intimnoj i toploj atmosferi, dok delite radost i sre<span className={montserrat.className}>ć</span>ne trenutke s voljenima. Neka va<span className={montserrat.className}>š</span>a proslava ro<span className={montserrat.className}>đ</span>enja bude nezaboravna i ispunjena ljubavlju.
+          </p>
+        </div>
+        <div className="swiper">
+          <div className="holder">
+            <img src="/party.svg" alt="" />
+          </div>
+        </div>
+        <div className={`dugme ${cairo.className}`}>
+          <Link href="/usluge" className="link">
+            Detaljnije
+          </Link>
+        </div>
+      </div>
+      <div className="ispod">
+        <h2>
+          Koktel ve<span className={montserrat.className}>č</span>e
           <span className="span">!</span>
         </h2>
         <div className="p">
@@ -107,7 +129,7 @@ export default function Usluge() {
             jedinstvenom iskustvu dru
             <span className={montserrat.className}>ž</span>enja s prijateljima
             ili kolegama, dok na<span className={montserrat.className}>š</span>a
-            profesionalna ekipa brine o svakom detalju. Uz našu{" "}
+            profesionalna ekipa brine o svakom detalju. Uz na<span className={montserrat.className}>š</span>u{" "}
             <span className={montserrat.className}>š</span>iroku ponudu pi
             <span className={montserrat.className}>ć</span>a i izvrsnu uslugu,
             va<span className={montserrat.className}>š</span>a koktel zabava{" "}
@@ -127,7 +149,7 @@ export default function Usluge() {
       </div>
       <div className="ispod">
         <h2>
-          Kancelarijske proslave
+          Korporativni Dogadjaji
           <span className="span">!</span>
         </h2>
         <div className="p">

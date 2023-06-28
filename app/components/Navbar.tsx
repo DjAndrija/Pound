@@ -10,7 +10,6 @@ const cairo = Cairo({
 
 export default function Navbar() {
   const [stanjeNava, SetStanjeNava] = useState("");
-  const [anim, SetAnim] = useState("neanim");
   useEffect(() => {
     window.addEventListener("scroll", function o() {
       const { scrollY } = window;
@@ -23,15 +22,16 @@ export default function Navbar() {
     });
   });
   useEffect(() => {
-    setTimeout(() => {
-      return SetAnim("");
-    }, 500);
-  }, []);
-  const [mobile, SetMobile] = useState("nece");
+      const { scrollY } = window;
+      if (scrollY === 0) {
+        return SetStanjeNava("dignut");
+      } else SetStanjeNava("spusten");
+  },[]);
+  const [mobile, SetMobile] = useState("");
 
   return (
     <>
-      <ul className={`mobile ${mobile} ${anim}`}>
+      <ul className={`mobile ${mobile}`}>
         <li>
           <Link href="">Početna</Link>
         </li>
@@ -75,8 +75,8 @@ export default function Navbar() {
             src="/options.svg"
             alt="dasdsd"
             onClick={() => {
-              if (mobile === "nece") SetMobile("oce");
-              else SetMobile("nece");
+              if (mobile === "oce") SetMobile("nece");
+              else SetMobile("oce");
             }}
           />
         </div>

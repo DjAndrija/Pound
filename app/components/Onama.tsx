@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 export default function Onama() {
   return (
     <div id="o-nama-poc" className={aboshione.className}>
-      <h1>Najuzbudljiviji provod u Srbiji</h1>
+      <h1>Najuzbudljiviji provod u Beogradu</h1>
       <div className="ispod">
         <div className="p">
           <p className={aboshione.className}>

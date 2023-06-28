@@ -5,7 +5,7 @@
 }
 #usluge-poc .h1 {
   background-color: var(--secondary-color);
-  padding: 20vh 0;
+  padding: 10vw 0;
   position: relative;
 }
 #usluge-poc .h1::after {
@@ -23,6 +23,7 @@
   text-align: center;
   background-clip: text;
   filter: drop-shadow(5px -2.5px 0px var(--primary-color));
+  max-width: 60%;
 }
 #usluge-poc h1::after {
   position: absolute;
@@ -44,29 +45,29 @@
 }
 #usluge-poc .ispod {
   margin-block: 30vh;
-  margin-left: 25%;
-  margin-right: 10%;
-  padding-bottom: 10vh;
+  margin-left: 20%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   min-height: 50vh;
   min-height: 50svh;
-  width: 65%;
+  width: 80%;
   position: relative;
 }
 #usluge-poc .ispod h2 {
-  position: absolute;
-  top: -10%;
-  left: 50%;
+  /* position: absolute; */
+  /* top: 10%;
+  left: 50%; */
+  flex: none;
+  margin-block: clamp(5vh,3.75vw,50px);
   font-size: var(--font-size-large);
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -5vw); */
   width: 100%;
   text-align: center;
 }
 #usluge-poc .ispod h2 .span {
-  filter: drop-shadow(4px -2px 0px var(--primary-color));
+  filter: drop-shadow(5px -2.5px 0px var(--primary-color));
 }
 #usluge-poc .ispod .swiper {
   width: 20%;
@@ -87,17 +88,19 @@
   width: 40%;
   margin: auto;
 }
+
 #usluge-poc .ispod .p p {
   font-size: var(--font-size-mid);
 }
+
+
 #usluge-poc .ispod .dugme {
-  position: absolute;
-  left: 50%;
-  top: 100%;
+ position: relative;
+  margin-left: 50%;
   min-width: 75px;
   width: 12.5%;
   aspect-ratio: 5/2;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%,clamp(.5vh,0vw,100px));
   padding-inline: 5px;
   display: flex;
   justify-content: center;
@@ -108,6 +111,8 @@
   border-radius: 5px;
   overflow: hidden;
   background-color: var(--primary-color);
+  margin-block: clamp(5vh,3.75vw,50px);
+
 }
 
 #usluge-poc .ispod .dugme::after {
@@ -148,5 +153,11 @@
   }
   #usluge-poc .ispod .p {
     min-width: 200px;
+  }
+  #usluge-poc .ispod h2 .span {
+    filter: drop-shadow(3px -1.75px 0px var(--primary-color));
+  }
+  #usluge-poc .h1 h1 {
+    filter: drop-shadow(3px -1.5px 0px var(--primary-color));
   }
 }
