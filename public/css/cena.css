@@ -47,8 +47,10 @@
   width: 35%;
   aspect-ratio: 2/1;
   text-align: center;
-  padding: 3%;
-  max-width: 500px;
+  margin: 5%;
+  max-width: 800px;
+  min-width: 275px;
+  margin-bottom: 20vh;
   position: relative;
 }
 #cena-poc .ispod .levo p {
@@ -84,34 +86,37 @@
   height: fit-content;
   width: fit-content;
   font-size: var(--font-size-Xlarge);
-  transform: translate(-100%, -100%);
+  transform: translate(-100%, 100%);
 }
 #cena-poc .ispod .desno {
   display: flex;
-  width: 40%;
-  max-width: 500px;
+  max-width: 800px;
   justify-content: space-around;
   align-items: stretch;
+  width: 50%;
+  min-width: 300px;
+  flex-wrap: wrap;
 }
 #cena-poc .ispod .desno .kartica {
   box-shadow: 0 0 10px black;
   border-radius: 1vh;
-  width: 45%;
-  padding: 2%;
-  margin: 2%;
-  aspect-ratio: 1/1.41;
   display: flex;
+  min-width: 150px;
+  margin: 2%;
+  width: 35%;
+  min-height: 150px !important;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: start;
   align-items: center;
   background-image: linear-gradient(45deg, #2d4356, #435b66, #a76f6f);
+  flex-wrap: wrap;
 }
 
 #cena-poc .ispod .desno .kartica h2 {
   font-size: var(--font-size-large);
   margin-top: 15%;
   position: relative;
+  text-align: center;
 }
 #cena-poc .ispod .desno .kartica h2::after {
   position: absolute;
@@ -136,12 +141,9 @@
   font-size: var(--font-size-large);
   font-style: italic;
 }
-/* #cena-poc .ispod .desno .kartica:hover .vreme p span {
-  filter: drop-shadow(2px 1px var(--primary-color)) drop-shadow(0 0 10px black);
-  color: white;
-} */
+
 #cena-poc .ispod .desno .kartica .cena {
-  margin-top: auto;
+  margin-top: 20%;
   margin-bottom: 15%;
   font-size: var(--font-size-large);
   font-style: oblique;
@@ -152,21 +154,41 @@
 #cena-poc .ispod .desno .kartica .dugme {
   margin-bottom: 15%;
   background-color: var(--secondary-color);
-  padding: 2%;
+  padding: 5%;
   width: 60%;
-  aspect-ratio: 5/1;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1vw;
+  border-radius: clamp(0.75vh, 0.25vw, 20px);
   overflow: hidden;
   font-size: var(--font-size-small);
   text-transform: uppercase;
   letter-spacing: 0.4vw;
+  position: relative;
+}
+#cena-poc .ispod .desno .kartica .dugme a {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(0, 0%, 0%);
+  z-index: 2;
 }
 #cena-poc .ispod .desno .kartica .dugme:hover {
   cursor: pointer;
+}
+#cena-poc .ispod .desno .kartica .dugme:hover::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  content: "";
+  background-color: var(--primary-color);
+  animation: left-go 1.5s ease-in forwards;
 }
 @keyframes grow {
   0%,
@@ -179,5 +201,51 @@
   }
   100% {
     width: 0;
+  }
+}
+@keyframes left-go {
+  0% {
+    width: 10%;
+    top: 110%;
+  }
+  25% {
+    width: 10%;
+    top: 50%;
+  }
+  30% {
+    width: 15%;
+    top: 50%;
+  }
+  35% {
+    width: 10%;
+    top: 50%;
+  }
+  40% {
+    width: 15%;
+    top: 50%;
+  }
+  45% {
+    width: 10%;
+    top: 50%;
+  }
+  100% {
+    width: 120%;
+    top: 50%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #cena-poc .h1 h1 {
+    filter: drop-shadow(3px -1.5px 0px var(--primary-color));
+  }
+  #cena-poc .ispod .desno {
+    width: 100%;
+    margin-top: 2.5vh;
+  }
+  #cena-poc .ispod .levo {
+    width: 80%;
+  }
+
+  #cena-poc .ispod .desno .kartica {
+    width: 27.5%;
   }
 }

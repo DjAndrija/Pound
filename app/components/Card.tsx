@@ -32,7 +32,12 @@ export default function Card() {
         <span>200 $</span>
       </div>
       <div className="dugme">
-        <div className={montserrat.className}>Naruči</div>
+        <div className={montserrat.className}>
+          <div className="link">
+            Kontakt
+            <Link href="/kontakt">Kontakt</Link>
+          </div>
+        </div>
       </div>
     </div>
   );
