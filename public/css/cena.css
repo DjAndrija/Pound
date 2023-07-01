@@ -188,7 +188,7 @@
   border-radius: 50%;
   content: "";
   background-color: var(--primary-color);
-  animation: left-go 1.5s ease-in forwards;
+  animation: left-go 0.75s ease-in forwards;
 }
 @keyframes grow {
   0%,
@@ -208,7 +208,7 @@
     width: 10%;
     top: 110%;
   }
-  25% {
+  10% {
     width: 10%;
     top: 50%;
   }

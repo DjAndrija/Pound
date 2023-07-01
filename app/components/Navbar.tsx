@@ -22,13 +22,13 @@ export default function Navbar() {
     });
   });
   useEffect(() => {
-      const { scrollY } = window;
-      if (scrollY === 0) {
-        return SetStanjeNava("dignut");
-      } else SetStanjeNava("spusten");
-  },[]);
+    const { scrollY } = window;
+    if (scrollY === 0) {
+      return SetStanjeNava("dignut");
+    } else SetStanjeNava("spusten");
+  }, []);
   const [mobile, SetMobile] = useState("");
-
+  const [overlay, SetOverlay] = useState("svetao");
   return (
     <>
       <ul className={`mobile ${mobile}`}>
@@ -77,10 +77,20 @@ export default function Navbar() {
             onClick={() => {
               if (mobile === "oce") SetMobile("nece");
               else SetMobile("oce");
+              if (overlay === "svetao") SetOverlay("taman");
+              else SetOverlay("svetao");
             }}
           />
         </div>
       </div>
+      <div
+        id="overlay"
+        className={overlay}
+        onClick={() => {
+          SetMobile("nece");
+          SetOverlay("svetao");
+        }}
+      ></div>
     </>
   );
 }
