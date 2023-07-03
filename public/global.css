@@ -6,7 +6,7 @@
 @import url("./css/kontakt.css");
 
 :root {
-  --font-size-small: clamp(8px, 0.7vw, 18px);
+  --font-size-small: clamp(8px, 0.9vw, 18px);
   --font-size-nav: clamp(10px, 1vw, 20px);
   --font-size-mid: clamp(14px, 1.2vw, 25px);
   --font-size-large: clamp(18px, 1.75vw, 30px);

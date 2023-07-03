@@ -95,12 +95,22 @@
   margin-block: clamp(0.2vw, 3vh, 5vw);
   margin-block: clamp(0.2svw, 3svh, 5svw);
 }
+#kontakt-poc #email .ispod .ime p{
+  font-size: var(--font-size-small);
+  color: red;
+}
 #kontakt-poc #email .ispod .ime input {
   outline: none;
   width: 100%;
-  padding: 2px;
+  padding: clamp(0.5vw, 1vh, 20px);
   margin-block: 10px;
+
+  border-radius: 0;
 }
+#kontakt-poc #email .ispod .ime input:focus {
+  border-color: var(--primary-color);
+}
+
 #kontakt-poc #email .ispod .ime textarea {
   outline: none;
   width: 100%;
@@ -108,13 +118,21 @@
   margin-block: 10px;
   min-height: 10vh;
   min-height: 10svh;
+  border-radius: 0;
+  border: 2px solid #000;
+  border-style: inset;
+  resize: none;
+}
+#kontakt-poc #email .ispod .ime textarea:focus {
+  border-color: var(--primary-color);
 }
 #kontakt-poc #email .ispod form button {
   padding: 0.5% 1%;
   background-color: var(--primary-color);
   border-radius: 2px;
-  margin-left: 85%;
+  margin-left: 50%;
   transform: translateX(-50%);
+  font-size: var(--font-size-mid);
 }
 #kontakt-poc #email .ispod form button:hover {
   cursor: pointer;
@@ -146,6 +164,12 @@
 
  */
 
+@media only screen and (min-width: 800px) {
+  #kontakt-poc #email .ispod form button {
+    margin-left: 90%;
+    transform: translateX(-100%);
+  }
+}
 @media only screen and (max-width: 650px) {
   #kontakt-poc .h1 h1 {
     filter: drop-shadow(3px -1.5px 0px var(--primary-color));
