@@ -40,11 +40,15 @@
   max-width: 60%;
   margin-inline: auto;
   text-align: center;
+  word-spacing: 1.1vh;
 }
 #kontakt-poc .p p {
   font-size: var(--font-size-mid);
 }
-
+#kontakt-poc .p p a {
+  color: var(--primary-color);
+  line-height: clamp(1vh, 1vw, 30px);
+}
 #kontakt-poc #email {
   min-height: 25vh;
   min-height: 25svh;
@@ -95,7 +99,7 @@
   margin-block: clamp(0.2vw, 3vh, 5vw);
   margin-block: clamp(0.2svw, 3svh, 5svw);
 }
-#kontakt-poc #email .ispod .ime p{
+#kontakt-poc #email .ispod .ime p {
   font-size: var(--font-size-small);
   color: red;
 }
@@ -137,7 +141,130 @@
 #kontakt-poc #email .ispod form button:hover {
   cursor: pointer;
 }
+/* POZOVI NAS */
+/* POZOVI NAS */
+/* POZOVI NAS */
+/* POZOVI NAS */
+/* POZOVI NAS */
+#kontakt-poc #pozovi {
+  margin-top: clamp(20px, 5vw, 30vh);
+  margin-top: clamp(20px, 5svw, 30svh);
+  margin-inline: 7.5%;
+}
+#kontakt-poc #pozovi .h2 {
+  max-width: 60%;
+}
+#kontakt-poc #pozovi .h2 h2 {
+  font-size: var(--font-size-large);
+}
+#kontakt-poc #pozovi .h2 h2 span {
+  position: relative;
+}
+#kontakt-poc #pozovi .h2 h2 span::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  content: "";
+}
+#kontakt-poc #pozovi .ispod {
+  width: 100%;
+  margin-top: 5%;
+  height: clamp(15vw, 25vh, 25vw);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#kontakt-poc #pozovi .ispod .tel {
+  box-shadow: 0 0 2px #000;
+  background-color: var(--primary-color);
+  position: relative;
+  /* width: 17.5%; */
+  padding: clamp(1vh, 0.75vw, 20px);
+  min-width: fit-content;
+  aspect-ratio: 3.5/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#kontakt-poc #pozovi .ispod .tel a {
+  text-decoration: none;
+  color: #000;
+  font-size: var(--font-size-mid);
+}
+#kontakt-poc #pozovi .ispod .tel:hover {
+  cursor: pointer;
+}
+#kontakt-poc #pozovi .ispod .icon {
+  width: 25%;
+}
+#kontakt-poc #pozovi .ispod .bezveze {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 25%;
+}
+#kontakt-poc #pozovi .ispod .bezveze .p {
+  width: 100%;
+}
+#kontakt-poc #pozovi .ispod .bezveze .p p {
+  font-size: var(--font-size-mid);
+  text-align: left;
+}
+#kontakt-poc #pozovi .ispod .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+#kontakt-poc #lokacija {
+  min-height: 25vh;
+  min-height: 25svh;
+  margin-top: clamp(20px, 5vw, 30vh);
+  margin-top: clamp(20px, 5svw, 30svh);
+  width: 85%;
+  margin-inline: 7.5%;
+}
+#kontakt-poc #lokacija .h2 {
+  max-width: 60%;
+}
+#kontakt-poc #lokacija .h2 h2 {
+  font-size: var(--font-size-large);
+}
+#kontakt-poc #lokacija .h2 h2 span {
+  position: relative;
+}
+#kontakt-poc #lokacija .h2 h2 span::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--primary-color);
+  content: "";
+}
+#kontakt-poc #lokacija .ispod {
+  width: 100%;
+  margin-top: 5%;
+  box-sizing: border-box;
+}
+#kontakt-poc #lokacija .ispod .maps {
+  width: 80%;
+  margin-inline: auto;
+  aspect-ratio: 5/2;
+}
+#kontakt-poc #lokacija .ispod .maps iframe {
+  width: 100%;
+  height: 100%;
+}
 /* 
 .
 1
@@ -173,5 +300,8 @@
 @media only screen and (max-width: 650px) {
   #kontakt-poc .h1 h1 {
     filter: drop-shadow(3px -1.5px 0px var(--primary-color));
+  }
+  #kontakt-poc #lokacija .ispod .maps {
+    aspect-ratio: 5/7;
   }
 }

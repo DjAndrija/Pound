@@ -103,9 +103,10 @@ export default function Usluge() {
             <span className={montserrat.className}>š</span> klub koji vam nudi
             prostor za proslavu ro
             <span className={montserrat.className}>đ</span>enja va
-            <span className={montserrat.className}>š</span>eg deteta! Pružamo
-            vam mogućnost da zajedno s porodicom i prijateljima proslavite
-            dolazak prinove. U<span className={montserrat.className}>ž</span>
+            <span className={montserrat.className}>š</span>eg deteta! Pru
+            <span className={montserrat.className}>ž</span>amo vam mogućnost da
+            zajedno s porodicom i prijateljima proslavite dolazak prinove. U
+            <span className={montserrat.className}>ž</span>
             ivajte u intimnoj i toploj atmosferi, dok delite radost i sre
             <span className={montserrat.className}>ć</span>ne trenutke s
             voljenima. Neka va<span className={montserrat.className}>š</span>a

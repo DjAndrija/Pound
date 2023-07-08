@@ -138,10 +138,10 @@
   font-size: var(--font-size-large);
 }
 .nece {
-  animation: nece 0.7s ease-in forwards;
+  animation: nece 0.4s forwards;
 }
 .oce {
-  animation: oce 0.7s ease-in forwards;
+  animation: oce 0.4s forwards;
 }
 
 #navbar .navmobilebutton {

@@ -1,6 +1,8 @@
 import { Kablammo } from "@next/font/google";
 import Navbar from "./components/Navbar";
 import "../public/global.css";
+import Toast from "./components/Toast";
+import Footer from "./components/Footer";
 const name = ["Andrija Arsenijevic"];
 const cairo = Kablammo({
   subsets: ["latin"],
@@ -24,9 +26,9 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/logo.svg" />
       </head>
       <body>
-        <Navbar />
-
         {children}
+
+        <Footer />
       </body>
     </html>
   );

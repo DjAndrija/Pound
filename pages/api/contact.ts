@@ -1,6 +1,7 @@
 import EmailSender from "@/app/components/EmailSender";
 import { NextApiRequest, NextApiResponse } from "next";
 import { redirect } from "next/navigation";
+import { cookies } from "next/dist/client/components/headers";
 const nodemailer = require("nodemailer");
 // const email = process.env.EMAIL;
 // const pass = process.env.EMAIL_PASS;
@@ -46,7 +47,13 @@ export default async function handler(
     await transporter.sendMail({
       ...mailOptionss,
     });
-    return res.status(200).json({ success: "true" });
+    cookies().set({
+      name: "toast",
+      value: "Poruka uspesno poslata",
+      expires: 2000,
+      path: "/",
+    });
+    return res.writeHead(302, { Location: "/" }).end();
   } catch (error: any) {
     console.log(error);
     return res.status(400).json({ message: error.message });
