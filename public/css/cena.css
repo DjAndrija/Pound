@@ -14,7 +14,7 @@
   position: relative;
   text-align: center;
   background-clip: text;
-  filter: drop-shadow(5px -2.5px 0px var(--primary-color));
+  /* filter: drop-shadow(5px -2.5px 0px var(--primary-color)); */
   max-width: 60%;
 }
 #cena-poc h1::after {
@@ -234,9 +234,9 @@
   }
 }
 @media only screen and (max-width: 650px) {
-  #cena-poc .h1 h1 {
+  /* #cena-poc .h1 h1 {
     filter: drop-shadow(3px -1.5px 0px var(--primary-color));
-  }
+  } */
   #cena-poc .ispod .desno {
     width: 100%;
     margin-top: 2.5vh;

@@ -26,7 +26,7 @@ export default function Slike() {
         </h1>
         <div className="ispod">
           <div className="img">
-            <img src="/pocetna.jpeg" alt="" />
+            <img src="/glavna-soba.jpg" alt="" />
             <h2 className={montserrat.className}>Glavna soba</h2>
           </div>
           <div className="img">

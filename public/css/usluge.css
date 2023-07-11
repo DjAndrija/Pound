@@ -1,3 +1,12 @@
+#usluge #usluge-poc .h1 {
+  background-color: transparent;
+}
+#usluge #usluge-poc .h1::after {
+  content: "";
+}
+#usluge #usluge-poc .ispod {
+  margin-inline: auto;
+}
 #usluge-poc {
   min-height: 50vh;
   min-height: 50svh;
@@ -22,7 +31,7 @@
   position: relative;
   text-align: center;
   background-clip: text;
-  filter: drop-shadow(5px -2.5px 0px var(--primary-color));
+  /* filter: drop-shadow(5px -2.5px 0px var(--primary-color)); */
   max-width: 60%;
 }
 #usluge-poc h1::after {
@@ -44,7 +53,7 @@
   transform: translate(200%, -50%);
 }
 #usluge-poc .ispod {
-  margin-block: 30vh;
+  margin-block: 15vh;
   margin-left: 20%;
   display: flex;
   flex-wrap: wrap;
@@ -160,7 +169,7 @@
   #usluge-poc .ispod h2 .span {
     filter: drop-shadow(3px -1.75px 0px var(--primary-color));
   }
-  #usluge-poc .h1 h1 {
+  /* #usluge-poc .h1 h1 {
     filter: drop-shadow(3px -1.5px 0px var(--primary-color));
-  }
+  } */
 }

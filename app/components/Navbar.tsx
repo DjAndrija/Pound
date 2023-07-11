@@ -40,7 +40,7 @@ export default function Navbar({ ok }: { ok: string }) {
           <Link href="/o-nama">O nama</Link>
         </li>
         <li>
-          <Link href="/o-nama">Usluge</Link>
+          <Link href="/usluge">Usluge</Link>
         </li>
         <li>
           <Link href="/o-nama">Ostale usluge</Link>
@@ -59,10 +59,7 @@ export default function Navbar({ ok }: { ok: string }) {
               <Link href="/o-nama">O nama</Link>
             </li>
             <li>
-              <Link href="/o-nama">Slike</Link>
-            </li>
-            <li>
-              <Link href="/o-nama">Usluge</Link>
+              <Link href="/usluge">Usluge</Link>
             </li>
 
             <li>
@@ -95,10 +92,7 @@ export default function Navbar({ ok }: { ok: string }) {
               <Link href="/o-nama">O nama</Link>
             </li>
             <li>
-              <Link href="/o-nama">Slike</Link>
-            </li>
-            <li>
-              <Link href="/o-nama">Usluge</Link>
+              <Link href="/usluge">Usluge</Link>
             </li>
 
             <li>

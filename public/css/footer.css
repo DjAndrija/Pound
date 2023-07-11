@@ -4,8 +4,24 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  position: relative;
   padding-block: clamp(2.5vh, 1.75vw, 12.5px);
 }
 #footer p {
-  color: rgb(150, 150, 150);
+  color: #969696;
+}
+#footer a {
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  right: 10vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  object-position: center;
+}
+#footer .wa {
+  right: 5vh;
+}
+#footer a img {
+  height: 100%;
 }
