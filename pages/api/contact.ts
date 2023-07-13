@@ -1,7 +1,7 @@
-import EmailSender from "@/app/components/EmailSender";
+import { setCookie } from "cookies-next";
 import { NextApiRequest, NextApiResponse } from "next";
-import { redirect } from "next/navigation";
-import { cookies } from "next/dist/client/components/headers";
+
+import { toast } from "react-toastify";
 const nodemailer = require("nodemailer");
 // const email = process.env.EMAIL;
 // const pass = process.env.EMAIL_PASS;
@@ -21,10 +21,8 @@ export default async function handler(
     from: email,
     to: "andrijadj96@gmail.com",
     subject: naslov,
-    html: `<h1>${ime}</h1> 
-  
+    html: `<h1>${ime}</h1>
     <p>${text}</p>
-    
     from <a href="mailto:${email}">${email}</a>
     `,
   };
@@ -32,11 +30,9 @@ export default async function handler(
     from: "andrijadj96@gmail.com",
     to: email,
     subject: naslov,
-    html: `<h1>Poštovani, primili smo vašu poruku</h1> 
-  
-    <p>Poštovani, želimo da Vas obavestimo da smo primili Vašu poruku i da ćemo u najkraćem 
+    html: `<h1>Poštovani, primili smo vašu poruku</h1>
+    <p>Poštovani, želimo da Vas obavestimo da smo primili Vašu poruku i da ćemo u najkraćem
     mogućem roku odgovoriti na nju</p>
-
     <h2>Srdačno, Vaš Pound </h2>
     `,
   };
@@ -47,13 +43,18 @@ export default async function handler(
     await transporter.sendMail({
       ...mailOptionss,
     });
-    cookies().set({
-      name: "toast",
-      value: "Poruka uspesno poslata",
-      expires: 2000,
-      path: "/",
+    toast.success("Wow so easy!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
     });
-    return res.writeHead(302, { Location: "/" }).end();
+    setCookie("kolacic", "aleksa", { req, res, maxAge: 10 * 20 * 23 });
+    return res.json({ a: "a" });
   } catch (error: any) {
     console.log(error);
     return res.status(400).json({ message: error.message });
