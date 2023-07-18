@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Cairo } from "next/font/google";
+import { Cairo } from "@next/font/google";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 const cairo = Cairo({

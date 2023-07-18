@@ -1,12 +1,10 @@
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
+import { Aoboshi_One, Montserrat, Nunito, Cairo } from "next/font/google";
 import Link from "next/link";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/css";
 
-import "swiper/css";
 const cairo = Cairo({
   weight: ["400"],
   subsets: ["latin"],

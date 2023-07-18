@@ -1,4 +1,4 @@
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
+import { Aoboshi_One, Montserrat, Nunito, Cairo } from "next/font/google";
 import Link from "next/link";
 import React from "react";
 import Card from "./Card";
