@@ -20,6 +20,7 @@
 }
 .slidingItem .ispod .p {
   width: 60%;
+  padding-left: 20%;
   min-width: 250;
 }
 .slidingItem .ispod p {
@@ -117,6 +118,7 @@
 .slidingItem .dole {
   display: flex;
   justify-content: center;
+  flex-direction: row-reverse;
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
@@ -141,7 +143,8 @@
   display: flex;
   flex-direction: column;
   width: 30%;
-  margin-inline: auto;
+  margin-left: 20%;
+  /* margin-inline: auto; */
 }
 .slidingItem .dole .desno h2 {
   margin-bottom: 5vh;
