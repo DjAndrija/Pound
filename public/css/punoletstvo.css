@@ -8,7 +8,8 @@
   font-style: bold;
 }
 .slidingItem .ispod {
-  margin-top: 5vh;
+  margin-block: 5vh;
+  padding-bottom: 5vh;
   width: 80%;
   margin-inline: auto;
   display: flex;
@@ -43,18 +44,18 @@
   align-items: stretch;
   flex-wrap: wrap;
   width: 100%;
-  gap: 5vw 10vw;
+  gap: 0vw 10vw;
 }
 .slidingItem .kartice .karta {
   box-shadow: 5px 5px 15px var(--primary-color);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 0vh 2.5vw 0 2vw;
   width: min-content;
   border-radius: 2.5vh;
-  margin: 7.5vh 2vh;
+  margin: 7.5vh 2vh 6vh 2vh;
 
   max-width: 50%;
 }
@@ -68,13 +69,14 @@
 .slidingItem .kartice .karta .deo {
   display: flex;
   align-items: center;
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin-block: 0;
 
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .slidingItem .kartice .karta .deo img {
   align-self: left;
+  margin-block: clamp(2px, 1.2vh, 0.5vw);
   width: 10%;
 }
 .slidingItem .kartice .karta .deo .p * {
@@ -82,9 +84,8 @@
   padding: 0;
 }
 .slidingItem .kartice .karta .deo .p {
-  align-self: center;
-  text-align: center;
-  width: 50%;
+  /* text-align: center;
+  width: 50%; */
   padding-right: 5%;
 }
 .slidingItem .kartice .karta .h2 {
@@ -104,9 +105,74 @@
 }
 .slidingItem .kartice .karta .cena {
   border-radius: 1.2vh;
-  padding: 2vh 4vh;
+  padding: 1.5vh 4vh;
   user-select: none;
-  margin-block: 1vh 2.5vh;
+  margin-block: 0.75vh 2.5vh;
   font-size: var(--font-size-mid);
   font-style: bold;
 }
+
+/* DOLE */
+
+.slidingItem .dole {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-block: 5vh;
+  padding-bottom: 5vh;
+}
+.slidingItem .dole .levo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slidingItem .dole .levo h1 {
+  font-size: var(--font-size-Xlarge);
+}
+.slidingItem .dole .levo span {
+  font-size: var(--font-size-Xlarge);
+  color: rgb(104, 104, 104);
+}
+.slidingItem .dole .desno {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-inline: auto;
+}
+.slidingItem .dole .desno h2 {
+  margin-bottom: 5vh;
+  font-size: var(--font-size-Xlarge);
+}
+.slidingItem .dole .desno .deo {
+  display: flex;
+  justify-content: flex-start;
+
+  gap: 5vh;
+  align-items: center;
+  margin-block: 2vh;
+}
+.slidingItem .dole .desno .deo img {
+  width: 5%;
+  filter: brightness(111) invert(0.5);
+}
+.slidingItem .dole .desno .deo p {
+  font-size: var(--font-size-large);
+  color: rgb(104, 104, 104);
+}
+
+@media screen and (max-width: 400px) {
+  .slidingItem .dole .levo {
+    justify-content: center;
+    margin-inline: auto;
+    margin-block: 5vh;
+  }
+  .slidingItem .dole .desno {
+    margin-left: calc(50vw - 50px);
+    margin-block: 5vh;
+  }
+}
+/* DOLE */
