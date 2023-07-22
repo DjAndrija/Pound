@@ -130,6 +130,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.slidingItem .dole .levo img {
+  width: 30%;
+  min-width: 100px;
+  filter: contrast(0.035);
+}
+.slidingItem .dole .levo h2 {
+  font-size: var(--font-size-Xlarge);
+  transform: scale(0.8);
+  text-align: center;
 }
 .slidingItem .dole .levo h1 {
   font-size: var(--font-size-Xlarge);

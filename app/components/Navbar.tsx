@@ -32,7 +32,7 @@ export default function Navbar({ ok }: { ok: string }) {
   const [overlay, SetOverlay] = useState("svetao");
   return (
     <>
-      <ul className={`mobile ${mobile}`}>
+      {/* <ul className={`mobile ${mobile}`}>
         <li>
           <Link href="">Početna</Link>
         </li>
@@ -43,12 +43,12 @@ export default function Navbar({ ok }: { ok: string }) {
           <Link href="/usluge">Usluge</Link>
         </li>
         <li>
-          <Link href="/o-nama">Karta pića</Link>
+          <Link href="/karta-pica">Karta pića</Link>
         </li>
         <li>
           <Link href="/o-nama">Kontakt</Link>
         </li>
-      </ul>
+      </ul> */}
       {ok === "da" ? (
         <div id="navbar" className={`${cairo.className} ${stanjeNava}`}>
           <Link href="/">
@@ -63,13 +63,13 @@ export default function Navbar({ ok }: { ok: string }) {
             </li>
 
             <li>
-              <Link href="/o-nama">Karta pića</Link>
+              <Link href="/karta-pica">Karta pića</Link>
             </li>
             <li>
               <Link href="/o-nama">Kontakt</Link>
             </li>
           </ul>
-          <div className="navmobilebutton">
+          {/* <div className="navmobilebutton">
             <img
               src="/options.svg"
               alt="dasdsd"
@@ -80,7 +80,7 @@ export default function Navbar({ ok }: { ok: string }) {
                 else SetOverlay("svetao");
               }}
             />
-          </div>
+          </div> */}
         </div>
       ) : (
         <div id="navbar" className={`${cairo.className} spusten`}>
@@ -96,7 +96,7 @@ export default function Navbar({ ok }: { ok: string }) {
             </li>
 
             <li>
-              <Link href="/o-nama">Karta pića</Link>
+              <Link href="/karta-pica">Karta pića</Link>
             </li>
             <li>
               <Link href="/o-nama">Kontakt</Link>

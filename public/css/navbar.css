@@ -166,12 +166,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .pc {
-    display: none;
-  }
-
-  #navbar .navmobilebutton {
+  /* #navbar .navmobilebutton {
     display: block !important;
+  } */
+  #navbar ul li a {
+    font-size: var(--font-size-small) !important;
   }
   .spusten::before {
     animation: none;
