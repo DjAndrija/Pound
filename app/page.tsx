@@ -33,8 +33,8 @@ export default function Home() {
     <main>
       <Navbar ok={"da"} />
       <Pocetna />
-      <Onama />
       <Uslugee />
+      <Onama />
       {/* <Usluge /> */}
       {/* <Cena /> */}
       <Kontakt />
