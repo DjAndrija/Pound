@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/dodatne-usluge/page": "app/dodatne-usluge/page.js",
+  "/karta-pica/page": "app/karta-pica/page.js",
+  "/o-nama/page": "app/o-nama/page.js",
+  "/usluge/page": "app/usluge/page.js"
+}
