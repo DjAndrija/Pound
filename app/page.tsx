@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Onama from "./components/Onama";
 import Pocetna from "./components/Pocetna";
 import Usluge from "./components/Usluge";
-// import Cena from "./components/Cena";
 import Kontakt from "./components/Kontakt";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -12,6 +10,7 @@ import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
 import React from "react";
 import Toast from "./components/Toast";
 import Uslugee from "./components/Uslugee";
+import Onama from "./components/Onama";
 const cairo = Cairo({
   weight: ["400"],
   subsets: ["latin"],
@@ -34,7 +33,7 @@ export default function Home() {
       <Navbar ok={"da"} />
       <Pocetna />
       <Uslugee />
-      <Onama />
+      {/* <Onama /> */}
       {/* <Usluge /> */}
       {/* <Cena /> */}
       <Kontakt />

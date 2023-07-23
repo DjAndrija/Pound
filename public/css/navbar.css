@@ -45,7 +45,7 @@
   padding-top: 0.3rem;
 }
 #navbar .pc {
-  width: clamp(270px, 70%, 850px);
+  width: clamp(270px, 70%, 650px);
   justify-content: space-around;
   margin-right: clamp(20px, 3vh, 40px);
 }
