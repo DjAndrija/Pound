@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import validator from "validator";
 import axios from "axios";
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "next/font/google";
+import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
 import { toast, ToastContainer } from "react-toastify";
 const cairo = Cairo({
   weight: ["400"],
@@ -38,7 +38,7 @@ export default function EmailSender() {
     try {
       const res = await axios.post(
         "http://localhost:3000/api/contact" ||
-          "https://pound-six.vercel.app//api/contact",
+          "https://pound-six.vercel.app/api/contact",
         {
           email,
           naslov,

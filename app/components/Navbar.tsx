@@ -51,6 +51,10 @@ export default function Navbar({ ok }: { ok: string }) {
                 </div>
               </Link>
             </li>
+
+            <li>
+              <Link href="/karta-pica">Karta pića</Link>
+            </li>
             <li>
               <Link href="/dodatne-usluge">
                 Dodatne Usluge{" "}
@@ -75,9 +79,6 @@ export default function Navbar({ ok }: { ok: string }) {
                   </ul>
                 </div>
               </Link>
-            </li>
-            <li>
-              <Link href="/karta-pica">Karta pića</Link>
             </li>
             <li>
               <Link href="/o-nama">Kontakt</Link>

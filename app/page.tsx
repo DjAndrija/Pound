@@ -1,16 +1,11 @@
 import Image from "next/image";
 import Pocetna from "./components/Pocetna";
-import Usluge from "./components/Usluge";
 import Kontakt from "./components/Kontakt";
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Swiperr from "./usluge/components/Swiper";
-import Link from "next/link";
 import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
 import React from "react";
-import Toast from "./components/Toast";
 import Uslugee from "./components/Uslugee";
-import Onama from "./components/Onama";
+// import Onama from "./components/Onama";
 const cairo = Cairo({
   weight: ["400"],
   subsets: ["latin"],
