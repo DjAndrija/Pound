@@ -367,3 +367,7 @@ body {
     filter: drop-shadow(3px -1.5px 0px var(--primary-color));
   } */
 }
+
+.usluge {
+  padding-top: 20vh;
+}

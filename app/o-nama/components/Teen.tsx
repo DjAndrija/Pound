@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 });
 export default function Teen() {
   return (
-    <div id="Teen" className={`aoboshione slidingItem`}>
+    <div id="Teen" className={`${aboshione.className} slidingItem`}>
       <div className="h1">
         <h1>Tinejdzerska proslava</h1>
       </div>

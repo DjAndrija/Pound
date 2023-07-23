@@ -10,6 +10,7 @@
   height: clamp(45px, 12svh, 90px);
   z-index: 5;
   /* overflow: hidden; */
+  gap: calc(var(--font-size-mid) * 2);
   padding: 0;
   margin: 0;
 }
@@ -45,7 +46,7 @@
   padding-top: 0.3rem;
 }
 #navbar .pc {
-  width: clamp(270px, 70%, 650px);
+  width: clamp(280px, 70%, 650px);
   justify-content: space-around;
   margin-right: clamp(20px, 3vh, 40px);
 }
@@ -71,9 +72,9 @@
   padding: 2vh;
   box-sizing: content-box;
   top: 50%;
-  left: 100%;
+  left: calc(100% + 2px);
   filter: invert(1);
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 #navbar .pc li a .padajuci {
   position: absolute;
@@ -219,6 +220,11 @@
   .spusten::before {
     animation: none;
     box-shadow: 0 0 10px black;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #navbar .pc li a img {
+    width: var(--font-size-small);
   }
 }
 @keyframes oce {

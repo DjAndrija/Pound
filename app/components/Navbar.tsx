@@ -41,11 +41,17 @@ export default function Navbar({ ok }: { ok: string }) {
                 <div className={`padajuci ${usluge}`}>
                   <ul>
                     <li>
-                      <Link href="/usluge">Proslave 18. rodjendana</Link>
-                      <Link href="/usluge">Proslava Godišnjice</Link>
-                      <Link href="/usluge">Rođenje deteta</Link>
-                      <Link href="/usluge">Korporativni događaj</Link>
-                      <Link href="/usluge">Tinejdzerska proslava</Link>
+                      <Link href="/usluge/punoletstvo">
+                        Proslave 18. rodjendana
+                      </Link>
+                      <Link href="/usluge/godisnjica">Proslava Godišnjice</Link>
+                      <Link href="/usluge/rodjenje-deteta">Rođenje deteta</Link>
+                      <Link href="/usluge/korporativni-dogadjaj">
+                        Korporativni događaj
+                      </Link>
+                      <Link href="/usluge/tinejdzerska-proslava">
+                        Tinejdzerska proslava
+                      </Link>
                     </li>
                   </ul>
                 </div>
