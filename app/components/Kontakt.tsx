@@ -1,19 +1,13 @@
 import React from "react";
 import EmailSender from "./EmailSender";
-import { Aoboshi_One, Montserrat, Nunito, Cairo } from "@next/font/google";
+import { Aoboshi_One, Montserrat } from "@next/font/google";
 import Link from "next/link";
-const cairo = Cairo({
-  weight: ["400"],
-  subsets: ["latin"],
-});
+
 const aboshione = Aoboshi_One({
   weight: ["400"],
   subsets: ["latin"],
 });
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["600", "700"],
@@ -22,9 +16,9 @@ export default function Kontakt() {
   return (
     <div id="kontakt-poc" className={montserrat.className}>
       <div className="h1">
-        <h1 className={aboshione.className}>Kontakt</h1>
+        <h1>Kontakt</h1>
       </div>
-      <div className={`p ${montserrat.className}`}>
+      <div className={`p `}>
         <p>
           Za sve informacije i dogovore oko iznajmljivanja našeg prostora,
           slobodno nam se obratite na brojeve {""}

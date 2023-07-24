@@ -61,9 +61,6 @@ export default function EmailSender() {
   };
   return (
     <>
-      <button onClick={() => console.log(`${url}api/contact`)}>
-        adasdadsadadasd
-      </button>
       <ToastContainer
         position="top-center"
         autoClose={5000}

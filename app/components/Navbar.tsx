@@ -76,18 +76,17 @@ export default function Navbar({ ok }: { ok: string }) {
                 <div className={`padajuci ${dusluge}`}>
                   <ul>
                     <li>
-                      <Link href="/usluge">Karta pića</Link>
-                      <Link href="/usluge">Ketering</Link>
-                      <Link href="/usluge">Muzika</Link>
-                      <Link href="/usluge">Fotograf</Link>
-                      <Link href="/usluge">Dekoracija</Link>
+                      <Link href="/dodatne-usluge/ketering">Ketering</Link>
+                      <Link href="/dodatne-usluge/muzika">Muzika</Link>
+                      <Link href="/dodatne-usluge/fotograf">Fotograf</Link>
+                      <Link href="/dodatne-usluge/dekoracija">Dekoracija</Link>
                     </li>
                   </ul>
                 </div>
               </Link>
             </li>
             <li>
-              <Link href="/o-nama">Kontakt</Link>
+              <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
           <div className="navmobilebutton">
