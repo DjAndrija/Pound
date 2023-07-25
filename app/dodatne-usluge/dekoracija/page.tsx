@@ -16,11 +16,11 @@ export default function page() {
     <div className={`${aoboshione.className} dusluge`}>
       <Navbar ok="ne" />
       <div className="container decor">
-        <h1>Fotograf</h1>
+        <h1>Dekoracija</h1>
         <p>
-          Naš fotograf je stručan u hvatanju najboljih fotografija koje će se
-          večno pamtiti. Cena našeg fotografa iznosi samo 30 eura za sat vremena
-          prisustva na vašem događaju.
+          U koliko želite najbolju dekoraciju došli ste na pravo mesto. Naš tim
+          će se pobrinut da mesto bude uredjeno baš onako kako Vama odgovara, i
+          osigurati Vam najbolji mogući ambijent.
         </p>
         {/* <ul>
           <li>Piletina</li>

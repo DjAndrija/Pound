@@ -18,10 +18,10 @@ export default function page() {
       <div className="container">
         <h1>Ketering</h1>
         <p>
-          Naš ketering tim je posvećen pružanju raznolike opcije i prilagoditi
-          hranu prema vašim željama i potrebama. S posebnom pažnjom pristupamo
-          dogovoru s vama, slavljenikom, kako bismo osigurali da hrana odražava
-          vaš jedinstveni stil i temu proslave.
+          Naš ketering tim je posvećen pružanju raznih opcija i prilagodjavanju
+          hrane prema Vašim željama i potrebama. S posebnom pažnjom pristupamo
+          dogovoru s Vama, slavljenikom, kako bismo osigurali da se hrana uklapa
+          u Vaš jedinstveni stil i temu proslave.
         </p>
         <ul>
           <li>Piletina</li>

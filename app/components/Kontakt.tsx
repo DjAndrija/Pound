@@ -34,9 +34,9 @@ export default function Kontakt() {
           stranici.
           <br />
           <br />
-          Naša ekipa je ovdje da vam pomogne i odgovori na sva pitanja koja
-          imate. Radujemo se uspostaviti kontakt s vama i dogovoriti nezaboravnu
-          saradnju!
+          Naša ekipa je ovde da vam pomogne i odgovori na sva pitanja koja
+          imate. Radujemo se uspostavljanju kontakta s vama i ugovaranju
+          nezaboravne žurke!
         </p>
       </div>
       <EmailSender />

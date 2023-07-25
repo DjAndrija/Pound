@@ -19,7 +19,7 @@ export default function page() {
         <h1>Fotograf</h1>
         <p>
           Naš fotograf je stručan u hvatanju najboljih fotografija koje će se
-          večno pamtiti. Cena našeg fotografa iznosi samo 30 eura za sat vremena
+          večno pamtiti. Cena našeg fotografa iznosi samo 30 eura na sat vremena
           prisustva na vašem događaju.
         </p>
         {/* <ul>

@@ -199,8 +199,7 @@
 }
 #kontakt-poc #pozovi .ispod {
   width: 100%;
-  margin-top: 5%;
-  height: clamp(15vw, 25vh, 25vw);
+  margin-block: 7.5vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

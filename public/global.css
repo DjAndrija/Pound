@@ -148,7 +148,10 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
-
+#pocetna #pocetnaButton a {
+  color: white;
+  text-decoration: none;
+}
 #pocetna #pocetnaButton::after {
   position: absolute;
   content: "";
