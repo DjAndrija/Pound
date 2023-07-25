@@ -39,6 +39,7 @@
 }
 .dusluge .container p {
   z-index: 2;
+  user-select: none;
   width: 80%;
   padding-block: 10vh;
   position: absolute;
@@ -64,6 +65,7 @@
 }
 .dusluge .container ul li {
   font-style: bold;
+  user-select: none;
   font-size: var(--font-size-large);
 }
 .dusluge .container .a {

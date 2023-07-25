@@ -60,12 +60,12 @@ export default function Kontakt() {
               </div>
             </div> */}
           <div className="tel">
-            <Link href="tel:0644737375">064-473-73-75</Link>
+            <Link href="tel:064650475">064-650-475</Link>
             <div className="outline"></div>
           </div>
 
           <div className="tel">
-            <Link href="tel:0644737375">064-473-73-75</Link>
+            <Link href="tel:064593847">064-593-847</Link>
             <div className="outline"></div>
           </div>
         </div>

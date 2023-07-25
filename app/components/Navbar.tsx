@@ -27,7 +27,12 @@ export default function Navbar({ ok }: { ok: string }) {
               <Link href="/o-nama">O nama</Link>
             </li>
             <li>
-              <Link href="/usluge">
+              <Link
+                href="/usluge"
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
                 Usluge{" "}
                 <img
                   src="/svgs/down.svg"
@@ -62,7 +67,12 @@ export default function Navbar({ ok }: { ok: string }) {
               <Link href="/karta-pica">Karta pića</Link>
             </li>
             <li>
-              <Link href="/dodatne-usluge">
+              <Link
+                href="/dodatne-usluge"
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
                 Dodatne Usluge{" "}
                 <img
                   src="/svgs/down.svg"

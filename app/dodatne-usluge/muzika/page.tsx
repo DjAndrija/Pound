@@ -18,7 +18,7 @@ export default function page() {
       <div className="container dodatneM">
         <h1>Muzika</h1>
         <p>
-          U koliko želite muziku uživo, na raspolaganju su vam trubači i naš
+          Ukoliko želite muziku uživo, na raspolaganju su vam trubači i naš
           bend, koji će se pobrinuti za to da ludujete do zore.
         </p>
         <ul>

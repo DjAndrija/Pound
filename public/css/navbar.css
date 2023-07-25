@@ -10,8 +10,8 @@
   height: clamp(45px, 12svh, 90px);
   z-index: 5;
   /* overflow: hidden; */
-  gap: calc(var(--font-size-mid) * 2);
   padding: 0;
+
   margin: 0;
 }
 
@@ -39,16 +39,17 @@
   animation: navHeightt 0.25s linear forwards;
 }
 #navbar .logo {
-  width: clamp(27px, 6.5vh, 60px);
-  width: clamp(27px, 6.5svh, 60px);
+  width: clamp(20px, 6vh, 150px);
+  width: clamp(15px, 6svh, 150px);
   z-index: 5 !important;
-  margin-left: 2rem;
+  margin-left: 2vw;
   padding-top: 0.3rem;
 }
 #navbar .pc {
-  width: clamp(280px, 70%, 650px);
+  /* gap: calc(var(--font-size-mid) * 2); */
+  width: clamp(240px, 60%, 1050px);
   justify-content: space-around;
-  margin-right: clamp(20px, 3vh, 40px);
+  /* margin-right: clamp(10px, 3vh, 40px); */
 }
 #navbar .pc li {
   list-style: none;
@@ -223,8 +224,17 @@
   }
 }
 @media only screen and (max-width: 700px) {
+  #navbar {
+    height: auto !important;
+    padding-block: clamp(2px, 1.5vh, 90px) !important;
+    padding-block: clamp(2px, 1.5svh, 90px) !important;
+  }
   #navbar .pc li a img {
     width: var(--font-size-small);
+  }
+  #navbar .logo {
+    width: clamp(10px, 3vh, 20px);
+    margin-left: 2vh;
   }
 }
 @keyframes oce {

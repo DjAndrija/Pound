@@ -68,7 +68,7 @@ export default function Swiperr() {
         </div>
         <div className="karta">
           <img src="/svgs/foto.svg" alt="" />
-          <h2>Profesionalni Forograf</h2>
+          <h2>Profesionalni Fotograf</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
             voluptatem est ratione tenetur ullam porro autem aspernatur cumque
